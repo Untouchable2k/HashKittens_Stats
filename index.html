@@ -302,7 +302,7 @@ Attributions:
             Data fetched at:
             <span id="LastUpdatedTime">00:00:00</span>
             <div style="font-size:0.875em;">
-              0xBitcoin Stats
+              HashKittens Stats
               <span id="footerversion">
                 v0.0.0
               </span>
@@ -365,14 +365,14 @@ Attributions:
           updateAndDisplayAllStats();
         }else if(searchParams.get('page') == 'miningcalculator') {
           log('MININGCALCULATOR selected');
-          $(document).attr("title", "Mining Calculator - 0xBitcoin Statistics");
+          $(document).attr("title", "Mining Calculator - HashKittens Statistics");
           $("#row-miningcalculator").show();
           loadAllStats();
         }else if(searchParams.get('page') == 'graphs') {
           log('GRAPHS selected');
           let days = 60;
           let points = 60;
-          $(document).attr("title", "Graphs - 0xBitcoin Statistics");
+          $(document).attr("title", "Graphs - HashKittens Statistics");
           if(searchParams.get('days')) {
             days = searchParams.get('days');
           }
