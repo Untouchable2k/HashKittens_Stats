@@ -432,7 +432,7 @@ function updateStatsThatHaveDependencies(stats) {
   el_safe('#InflationperYear').innerHTML = "<b>" + (amt1+amt2).toLocaleString(undefined, {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
-  }) + "</b> 0xBitcoin";
+  }) + "</b> MEOWW";
   el_safe('#InflationPercentageperYear').innerHTML = "<b>" + ((100 * ( amt1+amt2)) / (current_supply + amt1 + amt2)).toLocaleString(undefined, {
     minimumFractionDigits: 0,
     maximumFractionDigits: 3
