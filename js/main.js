@@ -451,14 +451,10 @@ function updateLastUpdatedTime() {
 
 function updateThirdPartyAPIs() {
   /* ethplorer token info */
-  $.getJSON('https://api.ethplorer.io/getTokenInfo/' + _CONTRACT_ADDRESS + '?apiKey=freekey',
+  $.getJSON('https://api.ethplorer.io/getTokenInfo/' + _CONTRACT_ADDRESS + '?apiKey=nbpa1064pGVxo57',
     function(data) {
       el('#TokenHolders').innerHTML = "<b>" + data["holdersCount"] + "</b> holders";
       el('#TokenTransfers').innerHTML = "<b>" + data["transfersCount"] + "</b> transfers";
-  });
-  /* ethplorer contract address info */
-  $.getJSON('https://api.ethplorer.io/getAddressInfo/' + _CONTRACT_ADDRESS + '?apiKey=freekey',
-    function(data) {
       el('#TotalContractOperations').innerHTML = "<b>" + data["txsCount"] + "</b> txs";
   });
 }
