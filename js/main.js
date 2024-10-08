@@ -459,7 +459,7 @@ function updateThirdPartyAPIs() {
   /* ethplorer contract address info */
   $.getJSON('https://api.ethplorer.io/getAddressInfo/' + _CONTRACT_ADDRESS + '?apiKey=freekey',
     function(data) {
-      el('#TotalContractOperations').innerHTML = "<b>" + data["tokenInfo"]["txsCount"] + "</b> txs";
+      el('#TotalContractOperations').innerHTML = "<b>" + data["txsCount"] + "</b> txs";
   });
 }
 
@@ -550,7 +550,7 @@ function updateAllMinerInfo(eth, stats, hours_into_past){
   var last_imported_mint_block = 0;
 
   var last_reward_eth_block = getValueFromStats('Last Eth Reward Block', stats)
-  var current_eth_block = getValueFromStats('Last Eth Block', stats)
+  var current_eth_block = getValueFromStats('Last Eth Blockundefined', stats)
   var estimated_network_hashrate = getValueFromStats('Estimated Hashrate', stats)
   var last_difficulty_start_block = getValueFromStats('Last Difficulty Start Block', stats)
 
