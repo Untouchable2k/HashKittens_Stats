@@ -459,7 +459,7 @@ function updateThirdPartyAPIs() {
   /* ethplorer contract address info */
   $.getJSON('https://api.ethplorer.io/getAddressInfo/' + _CONTRACT_ADDRESS + '?apiKey=freekey',
     function(data) {
-      el('#TotalContractOperations').innerHTML = "<b>" + data["countTxs"] + "</b> txs";
+      el('#TotalContractOperations').innerHTML = "<b>" + data["tokenInfo"]["txsCount"] + "</b> txs";
   });
 }
 
