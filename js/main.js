@@ -19,7 +19,7 @@ const _ZERO_BN = new Eth.BN(0, 10);
 /* contract constants */
 /* todo: pull these from the contract */
 /* todo: move these into some kind of contract helper class */
-const _CONTRACT_NAME = "0xBitcoin";
+const _CONTRACT_NAME = "HashKittens";
 const _CONTRACT_SYMBOL = "HashKittens";
 const _BLOCKS_PER_READJUSTMENT = 1024;
 const _CONTRACT_ADDRESS = "0x0A59F69075b0C17a57c208471d0adb99FF368471";
