@@ -20,7 +20,7 @@ const _ZERO_BN = new Eth.BN(0, 10);
 /* todo: pull these from the contract */
 /* todo: move these into some kind of contract helper class */
 const _CONTRACT_NAME = "0xBitcoin";
-const _CONTRACT_SYMBOL = "0xBTC";
+const _CONTRACT_SYMBOL = "HashKittens";
 const _BLOCKS_PER_READJUSTMENT = 1024;
 const _CONTRACT_ADDRESS = "0x0A59F69075b0C17a57c208471d0adb99FF368471";
 const _MINT_TOPIC = "0xcf6fbb9dcea7d07263ab4f5c3a92f53af33dffc421d9d121e1c74b307e68189d";
